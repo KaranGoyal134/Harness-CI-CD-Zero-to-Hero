@@ -31,7 +31,7 @@ pipeline:
         ##############################################
         # CHANGE THIS: Your GitHub connector
         ############################################
-        connectorRef: account.github-connector
+        connectorRef: account.githubconnector
         ###############################################
         # CHANGE THIS: Your repo name
         ###############################################
@@ -103,7 +103,7 @@ pipeline:
                     ###############################################
                     # CHANGE THIS: Your Docker Hub connector name
                     ##############################################
-                    connectorRef: dockerhub
+                    connectorRef: dockerconnector
                     repo: <+variable.docker_username>/python-harness-app
                     tags:
                       - <+pipeline.sequenceId>
